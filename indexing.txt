@@ -22,4 +22,27 @@
  -There are 3 types of indexing.
   1>Single field indexing
   2>compound indexing
-  3>Text indexes
+  3>Text indexes 
+
+
+ db.data1.find({age:{$lte:30}}).explain("executionStats")//without indexing more time fetch and giveing the indexing less time to cover seraching.
+
+
+  //create index on age field
+  db.data1.createIndex({"age":1})
+
+  //One field remove at a time
+  db.data1.dropIndex("age_1")
+
+  //Fetch all the indexing returns
+  db.data1.getIndexes()
+
+ -->When not to use indexing in Mongodb?
+
+ -when the collection is small
+ -when the collection is frequntly updated
+ -when the queries are complex(multiple fields)
+ -when the collection is large(makes less indices)
+
+ -->Compound Index
+ 
