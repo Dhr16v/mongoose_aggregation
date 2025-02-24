@@ -258,4 +258,52 @@
   }
 ]
 
+// 14.Find users who have both 'enim' and 'id' as their tags?
+[
+  {
+    $match: {
+      tags:{$all:['enim','id']}
+    }
+  },
+  {
+    $count: 'allmatch'
+  }
+]
 
+//15.List all companies located in the usa with their corresponding user count.
+
+[
+  {
+    $match: {
+      "company.location.country": "USA",
+    },
+  },
+  {
+    $group: {
+      _id: "$company.title",
+      userCount: {
+        $sum: 1,
+      },
+    },
+  },
+]
+
+// 16.Lookup
+
+[
+  {
+    $lookup: {
+      from: "authors",
+      localField: "author_id",
+      foreignField: "_id",
+      as: "author_details"
+    }
+  },
+  {
+    $addFields: {
+      author_details: {
+        $first:"$author_details"
+      }
+    }
+  }
+]
