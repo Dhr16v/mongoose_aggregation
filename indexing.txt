@@ -1,0 +1,25 @@
+
+-->Indexing topic
+ 
+ -agar me koi json file me name ko Indexing use karata hu to uska
+  alag se data structure me sorting hogi.
+
+ -useme lagati hai binary search tree searching.
+
+ -Indexes are stored in B-tree data structure.
+
+ -It stores 
+    1>Index keys
+    2>Pointers to the documents in the collection
+
+ -When a query is executed,Mongodb can use the index to quickly locate the documents that match the query by searching
+  through the B-tree.
+
+ -The trade-off
+  -storage space more not every field get the Indexing.
+  -Write performance
+ 
+ -There are 3 types of indexing.
+  1>Single field indexing
+  2>compound indexing
+  3>Text indexes
