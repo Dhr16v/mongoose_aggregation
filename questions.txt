@@ -1,0 +1,13 @@
+1.How many users are active?
+2.what is the average age of all users?
+3.List the top 5 monst common favorite fruits grouped them together?
+4.Find the total number of males and females.
+5.Which country has the highest total number of registerd users?
+6.List all unique eye colors present in the collection.
+7.what is the average number of tags per user?
+8.How many users have 'enim' as one of their tags?
+9.what are the names and age of users who are inactive and have 'velit' as a tag?
+10.How many users have a phone number starting with '+1 (940);?
+11.who has registerd the most recently?
+12.categorize users by their favorite fruits?
+13.How many users have 'ad' as the second tag in their list of tags?
