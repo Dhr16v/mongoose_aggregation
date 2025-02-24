@@ -11,4 +11,3 @@
 11.who has registerd the most recently?
 12.categorize users by their favorite fruits?
 13.How many users have 'ad' as the second tag in their list of tags?
-14.dhruv 
