@@ -41,7 +41,7 @@
   },
   {
     $sort: {
-      count: 1
+      count: 1 //acending order
     }
   }
 ]
@@ -250,7 +250,7 @@
 [
   {
     $match: {
-      "tags.1": "ad",
+      "tags.1": "ad"
     },
   },
   {
