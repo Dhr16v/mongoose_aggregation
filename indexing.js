@@ -36,6 +36,13 @@ db.data1.insertMany([
 
   db.data1.createIndex({"age":1,"gender":1})
 
+  db.data1.createIndex({age:1,gender:1})
+
+  db.data1.find({age:{$gte:27},gender:"male"}).explain("executionStats") //this give indexing
+
+  db.data1.find({gender:"male"}).explain("executionStats")//this give collspan
+
+  
 
 
   
